@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+background-color: black;
+
+}
+.nav-link{
+    color: white;
+
+}
+.cp{
+background-color: black;
+
+}
+/*estilos Crrusel*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+background-color: rgb(187, 185, 185);
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    max-width: 90% !important;
+    height: auto;
+    background-color: #151616;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+
+
+
+    & .contenedor {
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 1rem;
+        /* display: grid; */
+        /* grid-template-columns: repeat(2, 1fr); */
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        & .icon-img {
+            width:  50%;
+            border-radius:.5rem ;
+        }
+    }
+
+    & .z {
+        background-color: rgb(250, 56, 234);
+    }
+
+   
+
+    @media (min-width: 600px) { 
+        .container_grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    }
+}
